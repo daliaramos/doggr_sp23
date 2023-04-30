@@ -14,8 +14,11 @@ ENV ADDRESS=0.0.0.0 PORT=8080 DB_HOST=postgres DB_PORT=5432 DB_NAME=doggr DB_USE
 
 RUN pnpm build
 
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#NOTE WE CANNOT DO {RUN pnpm db:reset} HERE BECAUSE DOCKER WILL NOT CONNECT THE NETWORK AT BUILD TIME!
-#RUN pnpm db:reset
+#NOTE WE CANNOT DO {PNPM DB:RESET} HERE BECAUSE DOCKER WILL NOT CONNECT THE NETWORK AT BUILD TIME
 
 CMD ["pnpm", "startProd"]
+
+
+
+
+
