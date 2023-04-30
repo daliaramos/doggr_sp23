@@ -2,6 +2,7 @@ import type { EntityManager } from '@mikro-orm/core';
 import { Seeder } from '@mikro-orm/seeder';
 import {UserSeeder} from "./UserSeeder.js";
 
+
 /* eslint-disable */
 export class DatabaseSeeder extends Seeder {
 
@@ -10,5 +11,6 @@ export class DatabaseSeeder extends Seeder {
       UserSeeder
     ]);
   }
+
 
 }

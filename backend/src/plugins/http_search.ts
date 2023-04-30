@@ -1,4 +1,3 @@
-
 import {FastifyInstance} from "fastify";
 import fp from "fastify-plugin";
 
@@ -22,4 +21,3 @@ const fastifySearchHttpMethod = async function(app: FastifyInstance){
 export const fastifySearchHttpMethodPlugin = fp(fastifySearchHttpMethod, {
    name: "fastify-search-http-method"
 });
-

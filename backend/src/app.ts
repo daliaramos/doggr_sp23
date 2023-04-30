@@ -10,4 +10,5 @@ await app.register(FastifyMikroOrmPlugin, config);
 await app.register(fastifySearchHttpMethodPlugin);
 await app.register(DoggerRoutes);
 
+
 export default app;
